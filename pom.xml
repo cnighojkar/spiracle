@@ -10,8 +10,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>${version.jdk}</maven.compiler.source>
-        <maven.compiler.target>${version.jdk}</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
     <build>
@@ -22,11 +22,11 @@
                 <version>2.4</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <webXml>${basedir}/src/main/xml/web-${version.webxml}.xml</webXml>
+                    <webXml>${basedir}/src/main/xml/web-30.xml</webXml>
                 </configuration>
             </plugin>
         </plugins>
-    </build>       
+    </build>
 
     <dependencies>
 	<!-- commons-collections is needed for Java deserialization RCE -->
